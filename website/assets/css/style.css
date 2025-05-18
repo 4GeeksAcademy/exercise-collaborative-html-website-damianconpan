@@ -1,3 +1,270 @@
-body{
-    background: #BDBDBD;
+/* Fondo general */
+body {
+    background: #FFFFFF;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+.custom-navbar {
+    background-color: #000;
+    padding: 15px 0;
+    font-family: sans-serif;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.brand {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.navbar-content a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar-content a:hover {
+    color: #ccc;
+}
+
+/* Tagline */
+.main-header {
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-text {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.overlay-text h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.overlay-text h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Estilos generales para secciones */
+.section {
+    margin-bottom: 50px;
+}
+
+/* First Heading */
+.text-section {
+    text-align: left;
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.main-paragraph {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+}
+
+.first-image {
+    width: 250px;
+    height: 250px;
+    background-image: url("../img/1.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Second Heading */
+.second-section {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 80px 0;
+}
+
+.text-section.text-end {
+    text-align: right;
+    flex: 1;
+    padding-left: 50px;
+}
+
+.secondary-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #212529;
+}
+
+.secondary-paragraph {
+    font-size: 1.2rem;
+    color: #6c757d;
+    max-width: 500px;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.second-image {
+    width: 250px;
+    height: 250px;
+    background-image: url("../img/2.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Portfolio */
+#portfolio {
+    padding: 80px 0;
+    background-color: #FFFFFF;
+}
+
+.portfolio-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #212529;
+    margin-bottom: 60px;
+}
+
+.portfolio-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.project-image {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+}
+
+.project-one {
+    background-image: url("../img/big-project-image.png");
+}
+
+.project-two {
+    background-image: url("../img/big-project-image.png");
+}
+
+.project-three {
+    background-image: url("../img/big-project-image.png");
+}
+
+.project-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-top: 20px;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #6c757d;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Contact */
+#contact {
+    padding: 80px 0;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #212529;
+    margin-bottom: 20px;
+}
+
+.contact-description {
+    font-size: 1.2rem;
+    color: #6c757d;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #212529;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #212529;
+}
+
+.form-group textarea {
+    height: 120px;
+}
+
+.contact-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #0056b3;
 }
